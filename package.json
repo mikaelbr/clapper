@@ -1,0 +1,22 @@
+{
+  "name": "clapper",
+  "version": "1.0.0",
+  "description": "Do actions on applause and listen on claps on browser usermedia.",
+  "main": "clapper.js",
+  "keywords": ["clapper", "applause", "clap", "usermedia", "mic", "microphone"],
+  "repository": "https://github.com/mikaelbr/clapper.git",
+  "scripts": {
+    "test": "mocha tests.js",
+    "build-example": "browserify example/main.js > example/bundle.js"
+  },
+  "author": "Mikael Brevik <mikaelbre@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^8.1.1",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "eventemitter3": "^0.1.6",
+    "lodash-node": "^2.4.1"
+  }
+}
