@@ -4,14 +4,14 @@ var EventEmitter = require('eventemitter3');
 var mic = require('./lib/mic');
 var isClap = require('./lib/is-clap');
 
-var threshold = 200;
+var threshold = 150;
 var doubleClapMs = 500;
 
 var clapper = module.exports = new EventEmitter();
 module.exports.start = function (opts) {
   opts = opts || {};
-  threshold = opts.threshold || threshold || 200;
-  doubleClapMs = opts.doubleClickDelay || doubleClapMs || 200;
+  threshold = opts.threshold || threshold || 150;
+  doubleClapMs = opts.doubleClickDelay || doubleClapMs || 500;
   mic.start();
 };
 
